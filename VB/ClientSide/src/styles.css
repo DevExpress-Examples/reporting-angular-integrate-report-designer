@@ -1,0 +1,4 @@
+@import url("../node_modules/jquery-ui/themes/base/all.css");
+@import url("../node_modules/devextreme/dist/css/dx.common.css");
+@import url("../node_modules/devextreme/dist/css/dx.light.css");
+@import url("../node_modules/devexpress-reporting/css/report-designer-light.min.css");
