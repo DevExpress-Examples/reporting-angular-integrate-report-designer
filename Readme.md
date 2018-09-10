@@ -1,4 +1,4 @@
-# How to use the Web Report Designer in JavaScript with Angular2
+# How to use the Web Report Designer in JavaScript with Angular
 
 This example demonstrates how to use the <a href="https://documentation.devexpress.com/XtraReports/17103/Concepts/End-User-Reporting/ASP-NET/End-User-Report-Designer-for-ASP-NET">End-User Web Report Designer</a>  in JavaScript with <a href="https://angular.io/">Angular</a>.
 
@@ -25,9 +25,9 @@ To enable the example proper operation, first run the backend project in Visual 
 
 Open your browser on <a href="http://localhost:4200/">http://localhost:4200/</a> to see the result.
 
-For a step-by-step tutorial, refer to the following document: <a href="https://documentation.devexpress.com/XtraReports/119431/Creating-End-User-Reporting-Applications/Web-Reporting/Using-Reporting-Controls-in-JS/Report-Designer-Integration-in-Angular2">Report Designer Integration in Angular2</a>.
+For a step-by-step tutorial, refer to the following document: <a href="https://documentation.devexpress.com/XtraReports/119431/Creating-End-User-Reporting-Applications/Web-Reporting/Using-Reporting-Controls-in-JS/Report-Designer-Integration-in-Angular2">Report Designer Integration in Angular</a>.
 
 **See also**:
 
-<a href="https://www.devexpress.com/Support/Center/p/T566419">How to use the Web Document Viewer in JavaScript with Angular2</a>
+<a href="https://www.devexpress.com/Support/Center/p/T566419">How to use the Web Document Viewer in JavaScript with Angular</a>
 
