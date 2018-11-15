@@ -1,3 +1,5 @@
 <div style="width:100%; height:100%">
-   <report-designer [reportUrl]="reportUrl"></report-designer>
+    <dx-report-designer [reportUrl]="reportUrl" height="1000px">
+        <dxrd-request-options [getDesignerModelAction]="getDesignerModelAction" [host]="hostUrl"></dxrd-request-options>
+      </dx-report-designer>
 </div>
