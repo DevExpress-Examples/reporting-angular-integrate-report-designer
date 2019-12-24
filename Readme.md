@@ -9,7 +9,7 @@ This example consists of two parts: 
 Perform the following steps to run this example:
 
 1. Open the back-end project solution (**CS\ServerSide.sln** or **VB\ServerSide.sln**) in Visual Studio and run the project.
-2. Navigate to the **JS\ClientSide_Angular5+\angular-example** folder that is the client part's root folder.
+2. Navigate to the **JS\angular-report-designer** folder that is the client part's root folder.
 3. Open the console and run the following command:
 
     ```npm install```
