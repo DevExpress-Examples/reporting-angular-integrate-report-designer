@@ -1,24 +1,35 @@
 # How to use the Web Report Designer in JavaScript with Angular
 
-The example consists of two parts: 
+This example consists of two parts: 
 
-1. A server (backend) project in the ASP.NET MVC implementation, where cross-domain requests are enabled (Access-Control-Allow-Origin) and custom report storage is implemented.
+- A server (back-end) ASP.NET MVC project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
 
-2. An <a href="https://angular.io/">Angular</a> client application (frontend) that includes all the necessary styles, scripts, and HTML-templates. 
+- An <a href="https://angular.io/">Angular</a> front-end client application.
 
-To download all the required client resources to deploy the control, navigate to the client part's root folder, open the console, and run the following command:
+Perform the following steps to run this example:
 
-```npm install```
+1. Open the back-end project solution (**CS\ServerSide.sln** or **VB\ServerSide.sln**) in Visual Studio and run the project.
+2. Navigate to the **JS\ClientSide_Angular5+\angular-example** folder that is the client part's root folder.
+3. Open the console and run the following command:
 
-For the example to work correctly, first run a backend project in Visual Studio, and then use the command below to run the client part:
+    ```npm install```
 
-```ng serve```
+4. Run the command to compile and start the client part:
 
-Open your browser on <a href="http://localhost:4200/">http://localhost:4200/</a> to see the result.
+    ```ng serve```
 
-For a step-by-step tutorial, refer to the following document: <a href="https://docs.devexpress.com/XtraReports/119431/Creating-End-User-Reporting-Applications/Web-Reporting/Using-Reporting-Controls-in-JS/Report-Designer-Integration-in-Angular2">Report Designer Integration in Angular</a>.
+5. Open your browser at [http://localhost:4200/](http://localhost:4200/) to see the result.
+
+![](images/screenshot.png)
+
+
+For a step-by-step tutorial, refer to the
+[Report Designer Integration in Angular](https://docs.devexpress.com/XtraReports/119431) topic.
 
 **See also**:
 
-<a href="https://github.com/DevExpress-Examples/how-to-use-the-web-document-viewer-in-javascript-with-angular-t566419">How to use the Web Document Viewer in JavaScript with Angular</a>
+* [How to use the Web Document Viewer in JavaScript with Angular](https://github.com/DevExpress-Examples/Reporting_how-to-use-the-web-document-viewer-in-javascript-with-angular-t5664192) example on GitHub
+
+
+
 
