@@ -59,7 +59,7 @@ For a step-by-step tutorial, refer to the
 
 ## Troubleshooting 
 The following articles help troubleshoot and resolve issues that may occur in web reporting applications:
-* [Troubleshooting](https://docs.devexpress.com/XtraReports/401726/web-reporting/general-information/troubleshooting);
+* [Troubleshooting](https://docs.devexpress.com/XtraReports/401726/web-reporting/general-information/troubleshooting)
 * [Reporting Application Diagnostics](https://docs.devexpress.com/XtraReports/401687/web-reporting/general-information/application-diagnostics)
 
 ## See also
