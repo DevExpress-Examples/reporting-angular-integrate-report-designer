@@ -64,7 +64,7 @@ The following articles help troubleshoot and resolve issues that may occur in we
 
 ## See also
 
-* [How to use the Web Document Viewer in JavaScript with Angular](https://github.com/DevExpress-Examples/Reporting_how-to-use-the-web-document-viewer-in-javascript-with-angular-t5664192) example on GitHub
+* [How to use the Web Document Viewer in JavaScript with Angular](https://github.com/DevExpress-Examples/Reporting_how-to-use-the-web-document-viewer-in-javascript-with-angular-t566419) example on GitHub
 
 
 
