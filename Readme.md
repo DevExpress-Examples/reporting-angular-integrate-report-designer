@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128596902/19.2.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T566422)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # How to use the Web Report Designer in JavaScript with Angular
 
 ## Upgrade the Project
@@ -16,15 +11,15 @@ Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConver
 
 ### Upgrade the client-side app
 
-Navigate to the `package.json` file in the **JS\angular-report-designer** folder and change all DevExpress script versions to the version you're using on the server side. For instance, if you're using v20.2.6, modify the package.json file as follows:
+Navigate to the `package.json` file in the **JS\angular-report-designer** folder and change all DevExpress script versions to the version you're using on the server side. For instance, if you're using v21.2.3, modify the package.json file as follows:
 
 ```
     {
         ...
-        "devextreme": "20.2.6",
-        "devexpress-richedit": "20.2.6",
-        "@devexpress/analytics-core": "20.2.6",
-        "devexpress-reporting-angular": "20.2.6"
+        "devextreme": "21.2.3",
+        "devexpress-richedit": "21.2.3",
+        "@devexpress/analytics-core": "21.2.3",
+        "devexpress-reporting-angular": "21.2.3"
         ...
     }
 ```
