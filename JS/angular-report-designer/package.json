@@ -44,8 +44,8 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
     "devextreme": "^19.2.5",
-    "devexpress-richedit": "~19.2.5",
-    "@devexpress/analytics-core": "~19.2.5",
-    "devexpress-reporting-angular": "~19.2.5"
+    "devexpress-richedit": "21.2-next",
+    "@devexpress/analytics-core": "21.2-next",
+    "devexpress-reporting-angular": "21.2-next"
   }
 }
