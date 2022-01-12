@@ -54,9 +54,9 @@ Perform the following steps to run this example:
 
     ```ng serve```
 
-5. Open your browser at [http://localhost:4200/](http://localhost:4200/) to see the result.
+5. Open your browser at `http://localhost:4200/` to see the result.
 
-![](images/screenshot.png)
+![Web Report Designer in JavaScript with Angular](images/screenshot.png)
 
 
 For a step-by-step tutorial, refer to the
