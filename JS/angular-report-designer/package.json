@@ -43,9 +43,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
-    "devextreme": "^20.2.2",
-    "devexpress-richedit": "^20.2.2",
-    "@devexpress/analytics-core": "^20.2.2",
-    "devexpress-reporting-angular": "^20.2.2"
+    "devextreme": "^21.1.2",
+    "devexpress-richedit": "^21.1.2",
+    "@devexpress/analytics-core": "^21.1.2",
+    "devexpress-reporting-angular": "^21.1.2"
   }
 }
