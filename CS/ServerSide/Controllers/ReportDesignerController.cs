@@ -5,7 +5,7 @@ using DevExpress.Web.Mvc.Controllers;
 using DevExpress.XtraReports.Web.ReportDesigner;
 
 namespace ServerSide.Controllers {
-    public class ReportDesignerController : ReportDesignerApiController {
+    public class ReportDesignerController : ReportDesignerApiControllerBase {
         // This action processes each internal request from the Report Designer.
         public override ActionResult Invoke() {
             var result = base.Invoke();
