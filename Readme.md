@@ -18,7 +18,7 @@ The `ServerSideAspNetCoreReportingApp` folder contains the ASP.NET Core server (
 
 The `angular-report-designer` contains the sample Angular application created by following the steps in the [Client (Front-End) Application](https://docs.devexpress.com/XtraReports/119431/web-reporting/javascript-reporting/angular/report-designer/quick-start/report-designer-integration-in-angular?f=theme#client-front-end-application) help topic section.
 
-When you start the back-end application and run the Angular application in the `ClientApp` folder, it appearsd as follows:
+When you start the back-end application and run the Angular application in the `ClientApp` folder, it appears as follows:
 
 ![Web Report Designer Angular App](images/screenshot.png)
 
