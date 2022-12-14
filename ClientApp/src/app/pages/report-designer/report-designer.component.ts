@@ -5,7 +5,6 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
   templateUrl: './report-designer.component.html',
   styleUrls: [
-    "../../../../node_modules/jquery-ui/themes/base/all.css",
     "../../../../node_modules/devextreme/dist/css/dx.material.orange.light.css",
     "../../../../node_modules/devexpress-richedit/dist/dx.richedit.css",
     "../../../../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css",

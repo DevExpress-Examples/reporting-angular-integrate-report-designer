@@ -6,7 +6,6 @@ selector: 'app-root',
 encapsulation: ViewEncapsulation.None,
 templateUrl: './app.component.html',
 styleUrls: [
-    "../../node_modules/jquery-ui/themes/base/all.css",
     "../../node_modules/devextreme/dist/css/dx.light.css",
     "../../node_modules/devexpress-richedit/dist/dx.richedit.css",
     "../../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css",

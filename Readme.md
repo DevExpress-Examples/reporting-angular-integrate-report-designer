@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128596902/22.1.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T566422)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # How to Integrate Web Report Designer in Angular App
 
 This project consists of an Angular client (front-end) application and an ASP.NET Core server (back-end) application. 
@@ -25,7 +20,7 @@ When you start the back-end application and run the Angular application in the `
 
 ## How to Run the Project
 
-To run the project, start the `ServerSideAspNetCoreReportingApp` application, install npm packages with `npm install` command in the `ClientApp` folder, and run the command  `ng serve`.
+To run the project, start the `ServerSideAspNetCoreReportingApp` application, install npm packages with the `npm install` command in the `ClientApp` folder, and run the command `ng serve`.
 
 Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both Front-end and Back-end applications.
 
@@ -94,8 +89,6 @@ Server App
 ## More Examples
 
 * [How to use the Web Document Viewer in JavaScript with Angular](https://github.com/DevExpress-Examples/Reporting_how-to-use-the-web-document-viewer-in-javascript-with-angular-t566419)
-
-
 
 
 
