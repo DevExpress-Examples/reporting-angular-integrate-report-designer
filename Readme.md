@@ -69,7 +69,7 @@ Perform the following steps to run this example:
 
     ```ng serve```
 
-5. Open your browser at [http://localhost:4200/](http://localhost:4200/) to see the result.
+5. Open your browser at `http://localhost:4200/` to see the result.
 
 ### Troubleshooting 
 
