@@ -59,7 +59,7 @@ npm install
 ### Run the Example
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
+1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
 2. Navigate to the `ClientApp` folder that is the client part's root folder.
 3. Open the console and run the following command:
 
@@ -69,7 +69,7 @@ Perform the following steps to run this example:
 
     ```ng serve```
 
-5. Open your browser at [http://localhost:4200/](http://localhost:4200/) to see the result.
+5. Open your browser at `http://localhost:4200/` to see the result.
 
 ### Troubleshooting 
 
@@ -81,22 +81,16 @@ The following articles help troubleshoot and resolve issues that may occur in we
 
 Client App
 
-- [package.json](ClientApp\package.json)
-- [app.module.ts](ClientApp\src\app\app.module.ts)
-- [report-designer.component.html](ClientApp\src\app\pages\report-designer\report-designer.component.html)
-- [report-designer.component.ts](ClientApp\src\app\pages\report-designer\report-designer.component.ts)
+- [package.json](ClientApp/package.json)
+- [app.module.ts](ClientApp/src/app/app.module.ts)
+- [report-designer.component.html](ClientApp/src/app/pages/report-designer/report-designer.component.html)
+- [report-designer.component.ts](ClientApp/src/app/pages/report-designer/report-designer.component.ts)
 
 Server App
 
-- [Startup.cs](ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp\Startup.cs)
-- [ReportingControllers.cs](ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp\Controllers\ReportingControllers.cs)
+- [Startup.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Startup.cs)
+- [ReportingControllers.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Controllers/ReportingControllers.cs)
 
 ## More Examples
 
 * [How to use the Web Document Viewer in JavaScript with Angular](https://github.com/DevExpress-Examples/Reporting_how-to-use-the-web-document-viewer-in-javascript-with-angular-t566419)
-
-
-
-
-
-
