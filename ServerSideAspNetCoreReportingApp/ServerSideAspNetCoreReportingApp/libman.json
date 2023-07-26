@@ -2,7 +2,6 @@
   "version": "1.0",
   "defaultProvider": "filesystem",
   "libraries": [
-  
     {
       "library": "node_modules/devextreme-dist/css/icons/",
       "destination": "wwwroot/css/icons",

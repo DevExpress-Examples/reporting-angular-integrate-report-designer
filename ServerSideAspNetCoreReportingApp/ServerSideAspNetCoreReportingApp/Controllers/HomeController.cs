@@ -1,7 +1,4 @@
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using DevExpress.XtraReports.UI;
-
 
 namespace ServerSideAspNetCoreReportingApp.Controllers {
     public class HomeController : Controller {
@@ -12,5 +9,7 @@ namespace ServerSideAspNetCoreReportingApp.Controllers {
             Models.ErrorModel model = new Models.ErrorModel();
             return View(model);
         }
+        
+
     }
 }

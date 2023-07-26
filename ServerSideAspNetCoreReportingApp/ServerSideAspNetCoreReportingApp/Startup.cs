@@ -18,9 +18,11 @@ namespace ServerSideAspNetCoreReportingApp {
     public class Startup {
         public Startup(IConfiguration configuration, IWebHostEnvironment hostingEnvironment) {
             Configuration = configuration;
+            HostingEnvironment = hostingEnvironment;
         }
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment HostingEnvironment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
@@ -30,6 +32,9 @@ namespace ServerSideAspNetCoreReportingApp {
                 .AddMvc()
                 .AddNewtonsoftJson();
             services.ConfigureReportingServices(configurator => {
+                if(HostingEnvironment.IsDevelopment()) { 
+                    configurator.UseDevelopmentMode();
+                }
                 configurator.ConfigureReportDesigner(designerConfigurator => {
                 });
                 configurator.ConfigureWebDocumentViewer(viewerConfigurator => {
@@ -39,12 +44,12 @@ namespace ServerSideAspNetCoreReportingApp {
                 configurator.UseAsyncEngine();
             });
             services.AddDbContext<ReportDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("ReportsDataConnectionString")));
-
             services.AddCors(options => {
                 options.AddPolicy("AllowCorsPolicy", builder => {
                     // Allow all ports on local host.
                     builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
-                    builder.WithHeaders("Content-Type");
+                    builder.AllowAnyHeader();
+                    builder.AllowAnyMethod();
                 });
             });
         }
@@ -65,7 +70,6 @@ namespace ServerSideAspNetCoreReportingApp {
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            
             app.UseRouting();
 
             app.UseCors("AllowCorsPolicy");

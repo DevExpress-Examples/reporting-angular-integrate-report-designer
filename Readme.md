@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128596902/2023.1)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T566422)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # How to Integrate Web Report Designer in Angular App
 
 This project consists of an Angular client (front-end) application and an ASP.NET Core server (back-end) application. 
@@ -20,7 +15,7 @@ The `angular-report-designer` contains the sample Angular application created by
 
 When you start the back-end application and run the Angular application in the `ClientApp` folder, it appears as follows:
 
-![Web Report Designer Angular App](images/screenshot.png)
+![Web Report Designer Angular App](Images/screenshot.png)
 
 
 ## How to Run the Project
@@ -37,15 +32,15 @@ Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConver
 
 ### Upgrade the client-side app
 
-Navigate to the `package.json` file in the `ClientApp` folder and change all DevExpress script versions to the version you're using on the server side. If you're using v22.1.6, modify the package.json file as follows:
+Navigate to the `package.json` file in the `ClientApp` folder and change all DevExpress script versions to the version you're using on the server side. If you're using v23.1.4, modify the package.json file as follows:
 
 ```
     {
         ...
-        "devextreme": "22.1.6",
-        "devexpress-richedit": "22.1.6",
-        "@devexpress/analytics-core": "22.1.6",
-        "devexpress-reporting-angular": "22.1.6"
+        "devextreme": "23.1.4",
+        "devexpress-richedit": "23.1.4",
+        "@devexpress/analytics-core": "23.1.4",
+        "devexpress-reporting-angular": "23.1.4"
         ...
     }
 ```
@@ -59,7 +54,7 @@ npm install
 ### Run the Example
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
+1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
 2. Navigate to the `ClientApp` folder that is the client part's root folder.
 3. Open the console and run the following command:
 
@@ -81,15 +76,15 @@ The following articles help troubleshoot and resolve issues that may occur in we
 
 Client App
 
-- [package.json](ClientApp\package.json)
-- [app.module.ts](ClientApp\src\app\app.module.ts)
-- [report-designer.component.html](ClientApp\src\app\pages\report-designer\report-designer.component.html)
-- [report-designer.component.ts](ClientApp\src\app\pages\report-designer\report-designer.component.ts)
+- [package.json](ClientApp/package.json)
+- [app.module.ts](ClientApp/src/app/app.module.ts)
+- [report-designer.component.html](ClientApp/src/app/pages/report-designer/report-designer.component.html)
+- [report-designer.component.ts](ClientApp/src/app/pages/report-designer/report-designer.component.ts)
 
 Server App
 
-- [Startup.cs](ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp\Startup.cs)
-- [ReportingControllers.cs](ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp\Controllers\ReportingControllers.cs)
+- [Startup.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Startup.cs)
+- [ReportingControllers.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Controllers/ReportingControllers.cs)
 
 ## More Examples
 
