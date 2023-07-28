@@ -11,7 +11,7 @@ using DevExpress.XtraReports.Web.ReportDesigner.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace DXWebApplication5.Controllers {
+namespace ServerSideAspNetCoreReportingApp.Controllers {
     public class CustomWebDocumentViewerController : WebDocumentViewerController {
         public CustomWebDocumentViewerController(IWebDocumentViewerMvcControllerService controllerService) : base(controllerService) {
         }
