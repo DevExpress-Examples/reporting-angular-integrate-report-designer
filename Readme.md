@@ -1,7 +1,3 @@
-<!-- default badges list -->
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T566422)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # How to Integrate Web Report Designer in Angular App
 
 This project consists of an Angular client (front-end) application and an ASP.NET Core server (back-end) application. 
@@ -19,12 +15,12 @@ The `angular-report-designer` contains the sample Angular application created by
 
 When you start the back-end application and run the Angular application in the `ClientApp` folder, it appears as follows:
 
-![Web Report Designer Angular App](images/screenshot.png)
+![Web Report Designer Angular App](Images/screenshot.png)
 
 
 ## How to Run the Project
 
-To run the project, start the `ServerSideAspNetCoreReportingApp` application, install npm packages with `npm install` command in the `ClientApp` folder, and run the command  `ng serve`.
+To run the project, start the `ServerSideAspNetCoreReportingApp` application, install npm packages with the `npm install` command in the `ClientApp` folder, and run the command `ng serve`.
 
 Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both Front-end and Back-end applications.
 
@@ -58,7 +54,7 @@ npm install
 ### Run the Example
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
+1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
 2. Navigate to the `ClientApp` folder that is the client part's root folder.
 3. Open the console and run the following command:
 
@@ -68,7 +64,7 @@ Perform the following steps to run this example:
 
     ```ng serve```
 
-5. Open your browser at `http://localhost:4200/` to see the result.
+5. Open your browser at [http://localhost:4200/](http://localhost:4200/) to see the result.
 
 ### Troubleshooting 
 
@@ -93,3 +89,7 @@ Server App
 ## More Examples
 
 * [How to use the Web Document Viewer in JavaScript with Angular](https://github.com/DevExpress-Examples/Reporting_how-to-use-the-web-document-viewer-in-javascript-with-angular-t566419)
+
+
+
+

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSideAspNetCoreReportingApp", "ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp.csproj", "{79B4AE98-59BE-42E8-B38B-D6C2F3141C58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerSideAspNetCoreReportingApp", "ServerSideAspNetCoreReportingApp.csproj", "{79B4AE98-59BE-42E8-B38B-D6C2F3141C58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
