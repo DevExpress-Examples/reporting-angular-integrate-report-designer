@@ -1,22 +1,16 @@
-using DevExpress.AspNetCore.Reporting.QueryBuilder;
+﻿using DevExpress.AspNetCore.Reporting.QueryBuilder;
+using DevExpress.AspNetCore.Reporting.QueryBuilder.Native.Services;
 using DevExpress.AspNetCore.Reporting.ReportDesigner;
+using DevExpress.AspNetCore.Reporting.ReportDesigner.Native.Services;
 using DevExpress.AspNetCore.Reporting.WebDocumentViewer;
 using DevExpress.AspNetCore.Reporting.WebDocumentViewer.Native.Services;
-using DevExpress.AspNetCore.Reporting.ReportDesigner.Native.Services;
-using DevExpress.AspNetCore.Reporting.QueryBuilder.Native.Services;
-using DevExpress.XtraReports.Web.ReportDesigner;
-using Microsoft.AspNetCore.Mvc;
 using DevExpress.DataAccess.Sql;
 using DevExpress.XtraReports.Web.ReportDesigner.Services;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ServerSideAspNetCoreReportingApp.Controllers {
-    public class CustomWebDocumentViewerController : WebDocumentViewerController {
-        public CustomWebDocumentViewerController(IWebDocumentViewerMvcControllerService controllerService) : base(controllerService) {
-        }
-    }
-
+namespace  ServerSideAspNetCoreReportingApp.Controllers {
     public class CustomReportDesignerController : ReportDesignerController {
         public CustomReportDesignerController(IReportDesignerMvcControllerService controllerService) : base(controllerService) {
         }
@@ -45,6 +39,11 @@ namespace ServerSideAspNetCoreReportingApp.Controllers {
 
     public class CustomQueryBuilderController : QueryBuilderController {
         public CustomQueryBuilderController(IQueryBuilderMvcControllerService controllerService) : base(controllerService) {
+        }
+    }
+
+    public class CustomWebDocumentViewerController : WebDocumentViewerController {
+        public CustomWebDocumentViewerController(IWebDocumentViewerMvcControllerService controllerService) : base(controllerService) {
         }
     }
 }

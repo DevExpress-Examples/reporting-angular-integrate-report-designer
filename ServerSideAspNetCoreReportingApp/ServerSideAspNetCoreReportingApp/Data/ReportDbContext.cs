@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
 namespace ServerSideAspNetCoreReportingApp.Data {
@@ -43,7 +43,7 @@ namespace ServerSideAspNetCoreReportingApp.Data {
                 var newData = new SqlDataConnectionDescription {
                     Name = nwindSqlDataConnectionName,
                     DisplayName = "Northwind Data Connection",
-                    ConnectionString = "XpoProvider=SQLite;Data Source=|DataDirectory|/Data/nwind.db"
+                    ConnectionString = "XpoProvider=SQLite;Data Source=|DataDirectory|Data/nwind.db"
                 };
                 SqlDataConnections.Add(newData);
             }
@@ -53,7 +53,7 @@ namespace ServerSideAspNetCoreReportingApp.Data {
                 var newData = new SqlDataConnectionDescription {
                     Name = reportsDataConnectionName,
                     DisplayName = "Reports Data (Demo)",
-                    ConnectionString = "XpoProvider=SQLite;Data Source=|DataDirectory|/Data/reportsData.db"
+                    ConnectionString = "XpoProvider=SQLite;Data Source=|DataDirectory|Data/reportsData.db"
                 };
                 SqlDataConnections.Add(newData);
             }

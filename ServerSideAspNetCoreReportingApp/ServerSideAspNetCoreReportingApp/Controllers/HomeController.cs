@@ -1,3 +1,4 @@
+using DevExpress.XtraReports.Web.ReportDesigner.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ServerSideAspNetCoreReportingApp.Controllers {
@@ -10,6 +11,16 @@ namespace ServerSideAspNetCoreReportingApp.Controllers {
             return View(model);
         }
         
+        public IActionResult ReportDesigner(
+            [FromServices] IReportDesignerModelBuilder reportDesignerModelBuilder, 
+            [FromQuery] string reportName) {
+
+            reportName = string.IsNullOrEmpty(reportName) ? "TestReport" : reportName;
+            var designerModel = reportDesignerModelBuilder
+                .Report(reportName)
+                .BuildModel();
+            return View(designerModel);
+        }
 
     }
 }
