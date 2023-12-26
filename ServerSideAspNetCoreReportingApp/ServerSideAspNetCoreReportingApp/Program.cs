@@ -8,10 +8,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace ServerSideAspNetCoreReportingApp
-{
-    public class Program
-    {
+namespace ServerSideAspNetCoreReportingApp {
+    public class Program {
         public static void Main(string[] args) {
             CreateWebHostBuilder(args).Build().Run();
         }

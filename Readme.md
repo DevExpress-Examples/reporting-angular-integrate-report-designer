@@ -36,15 +36,15 @@ Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConver
 
 ### Upgrade the client-side app
 
-Navigate to the `package.json` file in the `ClientApp` folder and change all DevExpress script versions to the version you're using on the server side. If you're using v22.1.6, modify the package.json file as follows:
+Navigate to the `package.json` file in the `ClientApp` folder and change all DevExpress script versions to the version you're using on the server side. If you're using v23.1.4, modify the package.json file as follows:
 
 ```
     {
         ...
-        "devextreme": "22.1.6",
-        "devexpress-richedit": "22.1.6",
-        "@devexpress/analytics-core": "22.1.6",
-        "devexpress-reporting-angular": "22.1.6"
+        "devextreme": "23.1.4",
+        "devexpress-richedit": "23.1.4",
+        "@devexpress/analytics-core": "23.1.4",
+        "devexpress-reporting-angular": "23.1.4"
         ...
     }
 ```
@@ -58,7 +58,7 @@ npm install
 ### Run the Example
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp\ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
+1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
 2. Navigate to the `ClientApp` folder that is the client part's root folder.
 3. Open the console and run the following command:
 
@@ -93,7 +93,3 @@ Server App
 ## More Examples
 
 * [How to use the Web Document Viewer in JavaScript with Angular](https://github.com/DevExpress-Examples/Reporting_how-to-use-the-web-document-viewer-in-javascript-with-angular-t566419)
-
-
-
-
