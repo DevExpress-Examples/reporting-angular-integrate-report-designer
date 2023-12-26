@@ -37,20 +37,20 @@ Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConver
 
 ### Upgrade the client-side app
 
-Navigate to the `package.json` file in the `ClientApp` folder and change all DevExpress script versions to the version you're using on the server side. If you're using v23.1.4, modify the package.json file as follows:
+Navigate to the `package.json` file in the `ClientApp`/`angular-report-designer` folder and change all DevExpress script versions to the version you're using on the server side. If you're using v23.2.3, modify the package.json file as follows:
 
 ```
     {
         ...
-        "devextreme": "23.1.4",
-        "devexpress-richedit": "23.1.4",
-        "@devexpress/analytics-core": "23.1.4",
-        "devexpress-reporting-angular": "23.1.4"
+        "devextreme": "23.2.3",
+        "devexpress-richedit": "23.2.3",
+        "@devexpress/analytics-core": "23.2.3",
+        "devexpress-reporting-angular": "23.2.3"
         ...
     }
 ```
 
-Open the `ClientApp` folder in the console and run the command to download updated packages:
+Open the `ClientApp``ClientApp`/`angular-report-designer` folder in the console and run the command to download updated packages:
 
 ```
 npm install
@@ -60,7 +60,7 @@ npm install
 Perform the following steps to run this example:
 
 1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
-2. Navigate to the `ClientApp` folder that is the client part's root folder.
+2. Navigate to the `ClientApp``ClientApp`/`angular-report-designer` folder that is the client part's root folder.
 3. Open the console and run the following command:
 
     ```npm install```
@@ -88,7 +88,7 @@ Client App
 
 Server App
 
-- [Startup.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Startup.cs)
+- [Program.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Program.cs)
 - [ReportingControllers.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Controllers/ReportingControllers.cs)
 
 ## More Examples
