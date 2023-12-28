@@ -4,15 +4,15 @@
 <!-- default badges end -->
 # Reporting for Angular - How to Integrate Web Report Designer in Angular App
 
-This example shows how to incorporate Web Report Designer into a client-side app built with Angular. The example consists of two parts:
+This example shows how to incorporate the Web Report Designer into a client-side app built with Angular. The example consists of two parts:
 
-- A server (back-end) ASP.NET Core project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
+- A server-side (back-end) ASP.NET Core project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
 
 - An [Angular](https://angular.io/) front-end client application.
 
 The `angular-report-designer` contains the sample Angular application created by following the steps in the [Create an Angular Front-End Application with a Report Designer](https://docs.devexpress.com/XtraReports/119431) topic.
 
-The `ServerSideAspNetCoreReportingApp` folder contains the ASP.NET Core server (back-end) application created as described in the following help topic: [Report Designer Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400196/web-reporting/javascript-reporting/server-side-configuration/report-designer/report-designer-server-side-configuration-asp-net-core). The application enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
+The `ServerSideAspNetCoreReportingApp` folder contains the ASP.NET Core server-side (back-end) application created as described in the following help topic: [Report Designer Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400196/web-reporting/javascript-reporting/server-side-configuration/report-designer/report-designer-server-side-configuration-asp-net-core). The application enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
 
 When you start the back-end application and run the Angular application in the `angular-report-designer` folder, it appears as follows:
 
@@ -23,7 +23,7 @@ When you start the back-end application and run the Angular application in the `
 
 To run the project, start the `ServerSideAspNetCoreReportingApp` application, install npm packages with the `npm install` command in the `angular-report-designer` folder, and run the command `npm start`.
 
-Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both Front-end and Back-end applications.
+Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both front-end and back-end applications.
 
 Follow these steps to update the project:
 
