@@ -80,6 +80,8 @@ Perform the following steps to run this example:
 
 ## Files to Review
 
+- [app.component.ts](angular-report-designer/src/app/app.component.ts)
+- [app.component.html](angular-report-designer/src/app/app.component.html)
 - [Program.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Program.cs)
 - [ReportingControllers.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Controllers/ReportingControllers.cs)
 
