@@ -17,7 +17,7 @@ import 'devexpress-reporting/dx-richedit';
     "../../node_modules/ace-builds/css/ace.css",
     "../../node_modules/ace-builds/css/theme/dreamweaver.css",
     "../../node_modules/ace-builds/css/theme/ambiance.css",
-    "../../node_modules/devextreme-dist/css/dx.light.css",
+    "../../node_modules/devextreme/dist/css/dx.light.css",
     "../../node_modules/devexpress-richedit/dist/dx.richedit.css",
     "../../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css",
     "../../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.light.css",
