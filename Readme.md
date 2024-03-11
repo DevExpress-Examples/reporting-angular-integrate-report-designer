@@ -77,7 +77,6 @@ Perform the following steps to run this example:
 
 * [Create an Angular Front-End Application with a Report Designer](https://docs.devexpress.com/XtraReports/119431)
 * [Document Viewer Server-Side Application (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400197) 
-
 * [Document Viewer's Server-Side Configuration (ASP.NET MVC)](https://docs.devexpress.com/XtraReports/118597)
 * [Troubleshooting](https://docs.devexpress.com/XtraReports/401726/web-reporting/general-information/troubleshooting)
 * [Reporting Application Diagnostics](https://docs.devexpress.com/XtraReports/401687/web-reporting/general-information/application-diagnostics)
