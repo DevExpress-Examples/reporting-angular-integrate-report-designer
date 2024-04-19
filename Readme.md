@@ -3,31 +3,31 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T566422)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Reporting for Angular - How to Integrate Web Report Designer in Angular App
+# Reporting for Angular - How to Integrate the DevExpress Web Report Designer into an Angular App
 
-This example shows how to incorporate the Web Report Designer into a client-side app built with Angular. The example consists of two parts:
+This example adds the DevExpress Web Report Designer to an Angular-powered client-side app. The sample consists of two distinct parts:
 
-- A server-side (back-end) ASP.NET Core project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
+- A server-side (back-end) ASP.NET Core project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements custom web report storage.
 
 - An [Angular](https://angular.io/) front-end client application.
 
-The `angular-report-designer` contains the sample Angular application created by following the steps in the [Create an Angular Front-End Application with a Report Designer](https://docs.devexpress.com/XtraReports/119431) topic.
+The `angular-report-designer` contains an Angular application (created by following the steps outlined in the following help topic): [Create an Angular Front-End Application with a Report Designer](https://docs.devexpress.com/XtraReports/119431)
 
-The `ServerSideAspNetCoreReportingApp` folder contains the ASP.NET Core server-side (back-end) application created as described in the following help topic: [Report Designer Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400196/web-reporting/javascript-reporting/server-side-configuration/report-designer/report-designer-server-side-configuration-asp-net-core). The application enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
+The `ServerSideAspNetCoreReportingApp` folder contains an ASP.NET Core server-side (back-end) application (created using configuration settings outlined in the following help topic): [Report Designer Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400196/web-reporting/javascript-reporting/server-side-configuration/report-designer/report-designer-server-side-configuration-asp-net-core). The application enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
 
 > [!TIP]
-> Make sure that the backend application runs on the port specified in the host setting of the Report Designer component. For more information, refer to the following help topic: [Determine the Host URL](https://docs.devexpress.com/XtraReports/400196/web-reporting/asp-net-core-reporting/server-side-configuration/report-designer-server-side-configuration-asp-net-core#step-3-determine-the-host-url).
+> Make certain that the backend application runs on the port specified within the host setting of the DevExpress Report Designer component. For more information, refer to the following help topic:  [Determine the Host URL](https://docs.devexpress.com/XtraReports/400196/web-reporting/asp-net-core-reporting/server-side-configuration/report-designer-server-side-configuration-asp-net-core#step-3-determine-the-host-url).
 
-When you start the back-end application and run the Angular application in the `angular-report-designer` folder, it appears as follows:
+When you start the back-end application and execute the Angular application in the `angular-report-designer` folder, the following will appear on-screen:
 
 ![Web Report Designer Angular App](Images/screenshot.png)
 
 
 ## How to Run the Project
 
-To run the project, start the `ServerSideAspNetCoreReportingApp` application, install npm packages with the `npm install` command in the `angular-report-designer` folder, and run the command `npm start`.
+To run the project, start the `ServerSideAspNetCoreReportingApp` application, install npm packages with the `npm install` command in the `angular-report-designer` folder, and run the `npm start` command.
 
-Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both front-end and back-end applications.
+Before you run the project, verify the DevExpress version used. If using an older version, upgrade DevExpress Reports. Make certain to use the same DevExpress component versions for both front-end and back-end applications.
 
 Follow these steps to update the project:
 
@@ -37,7 +37,7 @@ Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConver
 
 ### Upgrade the client-side app
 
-Navigate to the `package.json` file in the `angular-report-designer` folder and change all DevExpress script versions to the version you're using on the server side. If you're using v23.2.3, modify the package.json file as follows:
+Navigate to the `package.json` file in the **angular-report-designer** folder and change all DevExpress script versions to the version you're using on the server side. If you're using v23.2.3, modify the **package.json** file as follows:
 
 ```
     {
@@ -61,17 +61,17 @@ npm install
 
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (`ServerSideAspNetCoreReportingApp.sln`) in Visual Studio and run the project.
-2. Navigate to the `angular-report-designer` folder that is the client part's root folder.
+1. Open the back-end project solution (**ServerSideAspNetCoreReportingApp.sln**) in Visual Studio and run the project.
+2. Navigate to the angular-report-designer folder (client root folder).
 3. Open the console and run the following command:
 
-    ```npm install```
+```npm install```
 
-4. Run the command to compile and start the client part:
+4. Run the command to compile and start the client portion of this example:
 
     ```npm start```
 
-5. Open your browser at `http://localhost:4200/` to see the result.
+5. Open your browser (http://localhost:4200/) to view results.
 
 ### Documentation 
 
