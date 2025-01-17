@@ -16,7 +16,7 @@ This example incorporates the Web Report Designer into a client-side app built w
 
 ### Server
 
-In the *ServerApp/ServerApp* folder, run the following command:
+In the *ServerApp* folder, run the following command:
 
 ```
 dotnet run
