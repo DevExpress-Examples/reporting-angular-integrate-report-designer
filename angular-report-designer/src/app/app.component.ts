@@ -36,5 +36,5 @@ export class AppComponent {
 	// The report name.
 	reportName = "TestReport";
 	// The backend application URL.
-	host = 'https://localhost:58236/';
+	host = 'http://localhost:5000/';
 }
