@@ -4,15 +4,13 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# Reporting for Angular - How to Integrate the DevExpress Web Report Designer into an Angular App
-
+# Reporting for Angular - Integrate a Web Report Designer into an Angular App
 
 This example incorporates the Web Report Designer into a client-side app built with Angular. The example consists of two parts:
 
 - The [ServerApp](ServerApp) folder contains the backend project. The project is an ASP.NET Core application that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements custom web report storage.
 
 - The [angular-report-designer](angular-report-designer) folder contains the client application built with [Angular](https://angular.io/).
-
 
 ## Quick Start
 
@@ -40,8 +38,6 @@ Open your browser (http://localhost:4200/) to see the result. The application di
 
 ![Web Report Designer Angular App](Images/screenshot.png)
 
-
-
 ### Documentation 
 
 * [Create an Angular Front-End Application with a Report Designer](https://docs.devexpress.com/XtraReports/119431)
@@ -54,8 +50,8 @@ Open your browser (http://localhost:4200/) to see the result. The application di
 
 - [app.component.ts](angular-report-designer/src/app/app.component.ts)
 - [app.component.html](angular-report-designer/src/app/app.component.html)
-- [Program.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Program.cs)
-- [ReportingControllers.cs](ServerSideAspNetCoreReportingApp/ServerSideAspNetCoreReportingApp/Controllers/ReportingControllers.cs)
+- [Program.cs](ServerApp/Program.cs)
+- [ReportingControllers.cs](ServerApp/Controllers/ReportingControllers.cs)
 
 ## More Examples
 
