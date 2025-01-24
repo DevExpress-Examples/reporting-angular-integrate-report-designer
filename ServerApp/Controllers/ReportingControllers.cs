@@ -20,7 +20,10 @@ namespace ServerApp.Controllers {
         }
 
         [HttpPost("[action]")]
-        public IActionResult GetDesignerModel([FromForm]string reportUrl, [FromServices] IReportDesignerModelBuilder designerModelBuilder, [FromForm] ReportDesignerSettingsBase designerModelSettings) {
+        public IActionResult GetDesignerModel(
+            [FromForm]string reportUrl, 
+            [FromServices] IReportDesignerModelBuilder designerModelBuilder, 
+            [FromForm] ReportDesignerSettingsBase designerModelSettings) {
             var ds = new SqlDataSource("NWindConnectionString");
 
             // Create a SQL query to access the Products data table.
