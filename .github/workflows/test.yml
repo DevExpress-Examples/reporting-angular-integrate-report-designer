@@ -1,0 +1,53 @@
+name: Example Tests
+# This workflow runs tests for the DevExpress Angular Report Designer frontend.
+
+on:
+  push:
+    branches: 
+      - '[0-9]+.[0-9]+.[0-9]+\+'  # Matches xx.x.x+ pattern
+  pull_request:
+    branches: 
+      - '[0-9]+.[0-9]+.[0-9]+\+'  # Matches xx.x.x+ pattern
+  workflow_dispatch:  # Allows manual triggering
+
+env:
+  NODE_VERSION: '20'
+  DOTNET_VERSION: '8.0.x'
+
+jobs:
+  test:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        cache-dependency-path: |
+          package-lock.json
+
+    - name: Setup Chrome
+      uses: browser-actions/setup-chrome@v1
+      with:
+        chrome-version: stable
+        
+    - name: Run Tests
+      run: |
+        $exitCode = pwsh -ExecutionPolicy Bypass -File test/main-test.ps1
+        Write-Host "Test script exit code: $exitCode"
+        if ($exitCode -ne 0) {
+          Write-Error "❌ Tests failed with exit code: $exitCode"
+          exit $exitCode
+        }
+        Write-Host "✅ Tests passed successfully"
+      timeout-minutes: 5
