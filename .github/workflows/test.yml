@@ -16,9 +16,7 @@ env:
 
 jobs:
   test:
-    runs-on: windows-latest
-    timeout-minutes: 5
-    
+    runs-on: windows-latest    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -35,6 +33,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: |
           package-lock.json
+          angular-report-designer/package-lock.json
 
     - name: Setup Chrome
       uses: browser-actions/setup-chrome@v1
@@ -42,12 +41,17 @@ jobs:
         chrome-version: stable
         
     - name: Run Tests
+      shell: pwsh
       run: |
-        $exitCode = pwsh -ExecutionPolicy Bypass -File test/main-test.ps1
-        Write-Host "Test script exit code: $exitCode"
-        if ($exitCode -ne 0) {
-          Write-Error "❌ Tests failed with exit code: $exitCode"
-          exit $exitCode
+        try {
+          & "test/main-test.ps1"
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "❌ Tests failed with exit code: $LASTEXITCODE" -ForegroundColor Red
+            exit $LASTEXITCODE
+          }
+          Write-Host "✅ Tests passed successfully" -ForegroundColor Green
         }
-        Write-Host "✅ Tests passed successfully"
-      timeout-minutes: 5
+        catch {
+          Write-Host "❌ Test execution failed: $($_.Exception.Message)" -ForegroundColor Red
+          exit 1
+        }
