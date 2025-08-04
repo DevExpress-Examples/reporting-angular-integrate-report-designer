@@ -11,13 +11,13 @@ on:
   workflow_dispatch:  # Allows manual triggering
 
 env:
-  NODE_VERSION: '18'
+  NODE_VERSION: '20'
   DOTNET_VERSION: '8.0.x'
 
 jobs:
   test:
     runs-on: windows-latest
-    timeout-minutes: 25
+    timeout-minutes: 5
     
     steps:
     - name: Checkout repository
