@@ -252,6 +252,11 @@ FakesAssemblies/
 .ntvs_analysis.dat
 node_modules/
 
+# Playwright Test Results
+test-results/
+playwright-report/
+playwright/.cache/
+
 # Typescript v1 declaration files
 typings/
 

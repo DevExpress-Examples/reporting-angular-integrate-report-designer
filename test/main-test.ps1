@@ -35,7 +35,7 @@ function LaunchFrontend([Parameter(Mandatory)][string]$path) {
         Write-Host "Starting frontend server..."
         $process = Start-Process cmd -ArgumentList ('/c', 'npm', 'start') -PassThru
         Write-Host "Waiting for frontend to be ready..."
-        Start-Sleep -Seconds 5  # Give frontend time to build and start
+        Start-Sleep -Seconds 25  # Give frontend time to build and start
         return $process
     } finally {
         Pop-Location
@@ -43,24 +43,10 @@ function LaunchFrontend([Parameter(Mandatory)][string]$path) {
 }
 
 function RunTestCafeTests() {
-    $browserList = if ($env:BROWSER) { $env:BROWSER } else { 'chrome' }
-    $fileOrGlob = './test/testcafe-test.ts'
+    npx playwright test | Out-Host
+    $exitCode = $LASTEXITCODE
 
-    $arguments = @(
-        '/c'
-        'npx.cmd'
-        'testcafe'
-        $browserList
-        $fileOrGlob
-        '--base-url http://localhost:4200'
-        '--selector-timeout 1000'
-        '--assertion-timeout 1000'
-    )
-
-    $process = Start-Process 'cmd' -ArgumentList $arguments -NoNewWindow -Wait -ErrorAction Stop -PassThru
-    $exitCode = $process.ExitCode
-
-    Write-Host "TestCafe exit code: $exitCode"
+    Write-Host "Playwright exit code: $exitCode"
     return $exitCode
 }
 
@@ -73,7 +59,8 @@ function Main() {
         $frontendProcess = LaunchFrontend ./angular-report-designer
         try {
             Write-Host "Running TestCafe tests..."
-            return RunTestCafeTests
+            $testResult = RunTestCafeTests
+            return $testResult
         } finally {
             Write-Host "Stopping frontend process..."
             taskkill.exe /F /T /PID $frontendProcess.Id | Out-Host
