@@ -35,11 +35,32 @@ jobs:
           package-lock.json
           angular-report-designer/package-lock.json
 
+    - name: Cache Playwright browsers
+      uses: actions/cache@v4
+      id: playwright-cache
+      with:
+        path: |
+          ~/.cache/ms-playwright
+          ~/AppData/Local/ms-playwright
+        key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-playwright-
+
     - name: Setup Chrome
       uses: browser-actions/setup-chrome@v1
       with:
         chrome-version: stable
-        
+
+    - name: Install Playwright browsers
+      run: |
+        if (Test-Path "$env:USERPROFILE\AppData\Local\ms-playwright\chromium*") {
+          Write-Host "Playwright browsers already installed"
+        } else {
+          Write-Host "Installing Playwright browsers..."
+          npx playwright install --with-deps
+        }
+      shell: pwsh
+  
     - name: Run Tests
       shell: pwsh
       run: |
@@ -55,3 +76,4 @@ jobs:
           Write-Host "❌ Test execution failed: $($_.Exception.Message)" -ForegroundColor Red
           exit 1
         }
+
