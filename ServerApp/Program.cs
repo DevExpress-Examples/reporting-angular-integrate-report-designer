@@ -43,7 +43,7 @@ builder.Services.AddDbContext<ReportDbContext>(options => options.UseSqlite(buil
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowCorsPolicy", builder => {
         // Allow all ports on local host.
-        builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
+                builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
         builder.AllowAnyHeader();
         builder.AllowAnyMethod();
     });
@@ -55,7 +55,7 @@ using(var scope = app.Services.CreateScope()) {
     services.GetService<ReportDbContext>().InitializeDatabase();
 }
 var contentDirectoryAllowRule = DirectoryAccessRule.Allow(new DirectoryInfo(Path.Combine(app.Environment.ContentRootPath, "Content")).FullName);
-AccessSettings.ReportingSpecificResources.TrySetRules(contentDirectoryAllowRule, UrlAccessRule.Allow());
+AccessSettings.ReportingSpecificResources.SetRules(contentDirectoryAllowRule, UrlAccessRule.Deny());
 DevExpress.XtraReports.Configuration.Settings.Default.UserDesignerOptions.DataBindingMode = DevExpress.XtraReports.UI.DataBindingMode.Expressions;
 
 app.UseHttpsRedirection();

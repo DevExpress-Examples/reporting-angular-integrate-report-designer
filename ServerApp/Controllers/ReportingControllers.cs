@@ -4,6 +4,7 @@ using DevExpress.AspNetCore.Reporting.QueryBuilder;
 using DevExpress.AspNetCore.Reporting.ReportDesigner;
 using DevExpress.AspNetCore.Reporting.ReportDesigner.Native.Services;
 using DevExpress.AspNetCore.Reporting.QueryBuilder.Native.Services;
+using DevExpress.XtraReports.Web.ClientControls;
 using DevExpress.XtraReports.Web.ReportDesigner;
 using DevExpress.XtraReports.Web.ReportDesigner.Services;
 using DevExpress.AspNetCore.Reporting.WebDocumentViewer;
@@ -20,10 +21,7 @@ namespace ServerApp.Controllers {
         }
 
         [HttpPost("[action]")]
-        public IActionResult GetDesignerModel(
-            [FromForm]string reportUrl, 
-            [FromServices] IReportDesignerModelBuilder designerModelBuilder, 
-            [FromForm] ReportDesignerSettingsBase designerModelSettings) {
+        public IActionResult GetDesignerModel([FromForm]string reportUrl, [FromServices] IReportDesignerModelBuilder designerModelBuilder, [FromForm] ReportDesignerSettingsBase designerModelSettings) {
             var ds = new SqlDataSource("NWindConnectionString");
 
             // Create a SQL query to access the Products data table.
@@ -37,7 +35,12 @@ namespace ServerApp.Controllers {
                 })
                 .BuildModel();
            designerModel.Assign(designerModelSettings);
-           return DesignerModel(designerModel);
+           var clientSideModelSettings = new ClientSideModelSettings {
+                IncludeLocalization = false,
+                IncludeCldrData = false,
+                IncludeCldrSupplemental = false
+           };
+           return DesignerModel(designerModel, clientSideModelSettings);
         }
     }
 

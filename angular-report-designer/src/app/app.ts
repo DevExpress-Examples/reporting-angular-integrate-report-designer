@@ -1,18 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { DxReportDesignerModule } from 'devexpress-reporting-angular';
 import 'devexpress-reporting/dx-richedit';
 
 @Component({
   selector: 'app-root',
+  imports: [DxReportDesignerModule],
   encapsulation: ViewEncapsulation.None,
-  standalone: true,
-  imports: [
-	CommonModule, 
-	RouterOutlet,
-	DxReportDesignerModule],
-  templateUrl: './app.component.html',
+  templateUrl: './app.html',
   styleUrls: [
     "../../node_modules/ace-builds/css/ace.css",
     "../../node_modules/ace-builds/css/theme/dreamweaver.css",
@@ -26,15 +20,14 @@ import 'devexpress-reporting/dx-richedit';
     "../../node_modules/devexpress-reporting/dist/css/dx-reportdesigner.css"
 ]
 })
-
-export class AppComponent {
-	title = 'DXReportDesignerSample';
-	// If you use the ASP.NET Core backend:
-	getDesignerModelAction = "/DXXRD/GetDesignerModel"
-	// If you use the ASP.NET MVC backend:
-	//getDesignerModelAction = "/ReportDesigner/GetReportDesignerModel";
-	// The report name.
-	reportName = "TestReport";
-	// The backend application URL.
-	host = 'http://localhost:5000/';
+export class App {
+  title = 'DXReportDesignerSample';
+    // If you use the ASP.NET Core backend:
+    getDesignerModelAction = "/DXXRD/GetDesignerModel"
+    // If you use the ASP.NET MVC backend:
+    //getDesignerModelAction = "/ReportDesigner/GetReportDesignerModel";
+    // The report name.
+    reportName = "TestReport";
+    // The backend application URL.
+    host = 'http://localhost:5000/';
 }
