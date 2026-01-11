@@ -48,8 +48,8 @@ Open your browser (http://localhost:4200/) to see the result. The application di
 
 ## Files to Review
 
-- [app.component.ts](angular-report-designer/src/app/app.component.ts)
-- [app.component.html](angular-report-designer/src/app/app.component.html)
+- [app.ts](angular-report-designer/src/app/app.ts)
+- [app.html](angular-report-designer/src/app/app.html)
 - [Program.cs](ServerApp/Program.cs)
 - [ReportingControllers.cs](ServerApp/Controllers/ReportingControllers.cs)
 
@@ -63,3 +63,4 @@ Open your browser (http://localhost:4200/) to see the result. The application di
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
