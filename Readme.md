@@ -17,7 +17,7 @@ The `angular-report-designer` contains an Angular application (created by follow
 The `ServerSideAspNetCoreReportingApp` folder contains an ASP.NET Core server-side (back-end) application (created using configuration settings outlined in the following help topic): [Report Designer Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400196/web-reporting/javascript-reporting/server-side-configuration/report-designer/report-designer-server-side-configuration-asp-net-core). The application enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
 
 > [!TIP]
-> Make certain that the backend application runs on the port specified within the host setting of the DevExpress Report Designer component. For more information, refer to the following help topic:  [Determine the Host URL](https://docs.devexpress.com/XtraReports/400196/web-reporting/asp-net-core-reporting/server-side-configuration/report-designer-server-side-configuration-asp-net-core#step-3-determine-the-host-url).
+> Make certain that the backend application runs on the port specified within the host setting of the DevExpress Report Designer component. For more information, refer to the following help topic:  [Determine the Host URL](https://docs.devexpress.com/XtraReports/400196/web-reporting/asp-net-core-reporting/server-side-configuration/report-designer-server-side-configuration-asp-net-core#determine-the-host-url).
 
 When you start the back-end application and execute the Angular application in the `angular-report-designer` folder, the following will appear on-screen:
 
